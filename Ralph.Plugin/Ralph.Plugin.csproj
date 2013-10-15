@@ -52,11 +52,9 @@
     <Compile Include="CloneDetection\CloneDetectionDaemonStage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AboutAction.cs" />
-    <Compile Include="ReverseStringAction.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="HowToInstall.txt" />
-    <Content Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Actions.xml">

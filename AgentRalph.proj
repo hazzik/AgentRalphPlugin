@@ -51,7 +51,7 @@
   </Target>
 
   <Target Name="BuildReleasePackage">
-    <BuildPackage PackageOutputDir="bin" />
+<!--    <BuildPackage PackageOutputDir="bin" />-->
   </Target>
 
   <Target Name="Clean">
