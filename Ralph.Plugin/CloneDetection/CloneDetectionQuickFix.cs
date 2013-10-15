@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.Linq;
 using JetBrains.DocumentModel;
 using JetBrains.ProjectModel;
 using JetBrains.ReSharper.Daemon;
@@ -21,10 +23,10 @@ namespace AgentRalph.CloneDetection
 			this.suggestion = suggestion;
 		}
 
-	    public void CreateBulbItems(BulbMenu menu, Severity severity)
-	    {
-            menu.ArrangeContextActions(suggestion.GetBulbItems());
-	    }
+        public IEnumerable<IntentionAction> CreateBulbItems()
+        {
+            return suggestion.GetBulbItems().ToQuickFixAction();
+        }
 
 	    public bool IsAvailable(IUserDataHolder cache)
 		{
